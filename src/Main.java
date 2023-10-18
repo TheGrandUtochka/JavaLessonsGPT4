@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        AnimeCharacter character1 = new AnimeCharacter("Jotaro Kujo", 9000, "JoJo's Bizarre Adventure");
-        AnimeCharacter character2 = new AnimeCharacter("Killua Zoldyck", 10000, "Hunter x Hunter");
-        AnimeCharacter character3 = new AnimeCharacter("Denji", 4444, "Chainsaw Man");
-        character3.setPowerLevel(1111);
-        System.out.println(character1);
-        System.out.println(character2);
-        System.out.println(character3);
+        Hero hero = new Hero("Gon Freecss", 5000, "Hunter x Hunter", "Jajanken");
+        Villain villain = new Villain("Hisoka", 7000, "Hunter x Hunter", "Bungee Gum");
+
+        System.out.println(hero.getSpecialMove());
+        System.out.println(villain.getEvilPlan());
+
     }
 }
