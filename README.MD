@@ -1,36 +1,26 @@
-### Проект "Аниме Персонажи"
+### Проект "Персонажи JoJo's Bizarre Adventure Stardust Crusaders"
 
 #### Описание
-Этот проект включает в себя создание и управление объектами класса `AnimeCharacter`. Класс представляет собой модель аниме-персонажа с атрибутами, такими как имя, уровень мощности и название аниме-сериала.
+Этот проект представляет собой пример использования LinkedList в Java для хранения и манипуляции объектами. В данном случае, объекты представляют собой персонажей аниме "JoJo's Bizarre Adventure: Stardust Crusaders".
 
-#### Класс `AnimeCharacter`
-##### Атрибуты:
-- `name`: Имя персонажа аниме.
-- `powerLevel`: Уровень мощности персонажа.
-- `anime`: Название аниме-сериала, в котором появляется персонаж.
+### AnimeCharacter
+Базовый класс, который содержит основные атрибуты персонажа аниме, такие как имя, уровень мощности и возраст.
 
-##### Методы:
-- Конструктор: Инициализирует новый объект класса с заданными атрибутами.
-- `getName()`: Возвращает имя персонажа.
-- `getPowerLevel()`: Возвращает уровень мощности персонажа.
-- `getAnime()`: Возвращает название аниме-сериала.
-- `setPowerLevel(int powerLevel)`: Устанавливает новый уровень мощности персонажа.
-- `toString()`: Возвращает строковое представление объекта.
+### JJBACharacter
+Класс, наследуемый от `AnimeCharacter`, добавляет атрибут "stand" для персонажей аниме "JoJo's Bizarre Adventure".
 
-#### Пример использования
+## Основные Функции
+- Создание объектов `JJBACharacter`.
+- Добавление объектов в `LinkedList`.
+- Вывод содержимого `LinkedList`.
+- Удаление объектов из `LinkedList` по индексу.
+
+## Примеры Использования
 ```java
-public class Main {
-    public static void main(String[] args) {
-        AnimeCharacter character1 = new AnimeCharacter("Jotaro Kujo", 9000, "JoJo's Bizarre Adventure");
-        AnimeCharacter character2 = new AnimeCharacter("Killua Zoldyck", 10000, "Hunter x Hunter");
-        AnimeCharacter character3 = new AnimeCharacter("Denji", 4444, "Chainsaw Man");
-        character3.setPowerLevel(1111);
-        System.out.println(character1);
-        System.out.println(character2);
-        System.out.println(character3);
-    }
-}
+LinkedList<JJBACharacter> JJBACharacterList = new LinkedList<>();
+JJBACharacterList.add(new JJBACharacter("Jotaro Kujo", 9000, 17, "Star Platinum"));
+// ... (добавление других персонажей)
+JJBACharacterList.remove(2);  // Удаление персонажа по индексу
 ```
-
 #### Результат
-Объекты класса `AnimeCharacter` успешно созданы и модифицированы. Информация о персонажах выводится в консоль в удобном для чтения формате.
+Программа демонстрирует базовое использование LinkedList для хранения и манипуляции объектами, а также принципы ООП, такие как наследование.
