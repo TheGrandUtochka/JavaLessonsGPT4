@@ -1,9 +1,9 @@
-public class AnimeCharacter {
+public class AnimeCharacters {
     private String name;
     private int powerLevel;
     private int age;
 
-    public AnimeCharacter(String name, int powerLevel, int age) {
+    public AnimeCharacters(String name, int powerLevel, int age) {
         this.name = name;
         this.powerLevel = powerLevel;
         this.age = age;
