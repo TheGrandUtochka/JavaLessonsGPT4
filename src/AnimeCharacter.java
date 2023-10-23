@@ -27,10 +27,8 @@ public class AnimeCharacter {
 
     @Override
     public String toString() {
-        return "Character{" +
-                "name='" + name + '\'' +
-                ", powerLevel=" + powerLevel +
-                '}';
+        return "{name='" + name + '\'' +
+                ", powerLevel=" + powerLevel + "}";
     }
 
     @Override
